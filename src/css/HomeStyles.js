@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
 	home: {
-		height: '83vh',
+		height: '100%',
 		padding: '10px',
 		//backgroundColor: '#2d383b',
 	},
@@ -22,9 +22,10 @@ const useStyles = makeStyles((theme) => ({
 	},
 	home1l: {
 		width: '50%',
+		textAlign: 'right',
 		'& .MuiButton-root': {
-			position: 'absolute',
-			left: '480px',
+			position: 'relative',
+			left: '200',
 		},
 	},
 	home1r: { width: '50%', textAlign: 'center' },
@@ -34,6 +35,29 @@ const useStyles = makeStyles((theme) => ({
 	},
 	text: {
 		margin: '25px 0px',
+	},
+	empty: {
+		margin: '50px',
+	},
+	home2: {
+		display: 'flex',
+		width: '100%',
+	},
+	card: {
+		flex: '1',
+		background: 'transparent',
+		height: '480px',
+		boxShadow: '1px 3px 3px black',
+		margin: '20px',
+		alignItems: 'center',
+		textAlign: 'center',
+	},
+	cardtext: {
+		margin: '15px 0px',
+		color: '#959b9b',
+	},
+	cardicon: {
+		marginTop: '20px',
 	},
 }));
 

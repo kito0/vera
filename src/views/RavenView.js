@@ -22,7 +22,7 @@ export default function RavenView() {
 			</Typography>
 			<br />
 			<Paper elevation={3} className={classes.paper}>
-				<img src={demo} alt="raven demo" className={classes.demo} />
+				<img src={demo} alt="" className={classes.demo} />
 			</Paper>
 		</div>
 	);

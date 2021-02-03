@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	screen: {
 		paddingTop: '50px',
-		display: 'block',
+		//display: 'block',
 		position: 'relative',
 
 		'&::after': {
@@ -42,21 +42,6 @@ const useStyles = makeStyles((theme) => ({
 		position: 'relative',
 		zIndex: '1',
 		height: '88vh',
-	},
-	home: {
-		height: '83vh',
-		padding: 10,
-		//backgroundColor: '#2d383b',
-	},
-	raven: {
-		height: '83vh',
-		padding: 10,
-		//backgroundColor: '#302423',
-	},
-	zapr: {
-		height: '83vh',
-		padding: 10,
-		//backgroundColor: '#2b323d',
 	},
 	paper: {
 		marginTop: '5px',
