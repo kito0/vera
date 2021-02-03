@@ -1,11 +1,13 @@
-export default {
+import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
+
+const themeFile = {
 	palette: {
 		primary: {
-			main: 'rgb(15, 15, 15)',
+			main: '#121212',
 			contrastText: '#959b9b',
 		},
 		secondary: {
-			main: '#5e3333',
+			main: '#422a2a',
 			contrastText: '#959b9b',
 		},
 		contrastThreshold: 3,
@@ -13,3 +15,7 @@ export default {
 		spacing: 2,
 	},
 };
+
+const theme = createMuiTheme(themeFile);
+
+export default theme;
