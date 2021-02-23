@@ -2,6 +2,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import bg from '../util/bg.gif';
 
 const useStyles = makeStyles((theme) => ({
+	app: {
+		width: '100%',
+	},
 	toolbar: {
 		display: 'flex',
 		justifyContent: 'space-between',
@@ -21,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 		paddingTop: '50px',
 		//display: 'block',
 		position: 'relative',
-
+		width: '100%',
 		'&::after': {
 			position: 'absolute',
 			content: '""',

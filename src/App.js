@@ -56,6 +56,7 @@ function App() {
 	const classes = useStyles();
 	const theme = useTheme();
 	const [value, setValue] = React.useState(0);
+	// eslint-disable-next-line
 	const [anchorEl, setAnchorEl] = React.useState(null);
 	const menuId = 'primary-search-account-menu';
 

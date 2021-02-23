@@ -1,0 +1,55 @@
+version: v1beta9
+images:
+  app:
+    image: kitoaxs/vera
+    preferSyncOverRebuild: true
+    injectRestartHelper: true
+    appendDockerfileInstructions:
+    - USER root
+deployments:
+- name: vera
+  helm:
+    componentChart: true
+    values:
+      containers:
+      - image: kitoaxs/vera
+      service:
+        ports:
+        - port: 3000
+dev:
+  ports:
+  - imageName: app
+    forward:
+    - port: 3000
+  open:
+  - url: http://localhost:3000
+  sync:
+  - imageName: app
+    excludePaths:
+    - .git/
+    uploadExcludePaths:
+    - Dockerfile
+    - node_modules/
+    - devspace.yaml
+    onUpload:
+      restartContainer: true
+profiles:
+- name: production
+  description: ""
+  patches:
+  - op: remove
+    path: images.app.appendDockerfileInstructions
+  - op: remove
+    path: images.app.injectRestartHelper
+- name: interactive
+  description: ""
+  patches:
+  - op: add
+    path: dev.interactive
+    value:
+      defaultEnabled: true
+  - op: add
+    path: images.app.entrypoint
+    value:
+    - sleep
+    - "9999999999"

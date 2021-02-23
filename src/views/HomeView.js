@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStyles } from '../css/HomeStyles';
-import { Typography, Button, Card, CardHeader } from '@material-ui/core';
+import { Typography, Button, Card } from '@material-ui/core';
 import { Code, Web, CallMade } from '@material-ui/icons';
 import sd from '../util/sd.png';
 
