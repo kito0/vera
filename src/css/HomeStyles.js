@@ -1,6 +1,9 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
+	/**
+	 * Section 1
+	 */
 	home: {
 		height: '100%',
 		padding: '10px',
@@ -39,6 +42,10 @@ const useStyles = makeStyles((theme) => ({
 	empty: {
 		margin: '50px',
 	},
+
+	/**
+	 * Section 2
+	 */
 	home2: {
 		display: 'flex',
 		width: '100%',
@@ -53,8 +60,11 @@ const useStyles = makeStyles((theme) => ({
 		textAlign: 'center',
 	},
 	cardtext: {
-		margin: '15px 0px',
+		margin: '15px 30px',
 		color: '#959b9b',
+	},
+	cardtitle: {
+		fontStyle: 'italic',
 	},
 	cardicon: {
 		marginTop: '20px',

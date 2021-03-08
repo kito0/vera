@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta9
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+  name: cluster-ingress
+  namespace: vera
+spec:
+  rules:
+  - host: veraatech.com
+    http:
+      paths:
+      - backend:
+          serviceName: vera
+          servicePort: 3000
